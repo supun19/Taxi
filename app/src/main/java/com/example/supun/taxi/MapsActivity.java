@@ -1,5 +1,6 @@
 package com.example.supun.taxi;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentActivity;
@@ -11,6 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -43,6 +46,14 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Button button = (Button) findViewById(R.id.next);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                movePaymentMethod();
+            }
+        });
     }
 
 
@@ -121,5 +132,10 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void movePaymentMethod(){
+        Intent intent = new Intent(this,Payment.class);
+        startActivity(intent);
     }
 }
