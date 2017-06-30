@@ -26,7 +26,8 @@ public class DirectPay extends AppCompatActivity {
         if (getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
-            Bitmap myBitmap = QRCode.from("LKR 660.00").withSize(400,400).bitmap();
+            String code = "f46b8bd6-4eb3-4bd9-9f4a-a827c78a2610 660.00 main nsb pickme;1549f642-3a50-49a0-8f57-31b2ab94841e $ pickme boc";
+            Bitmap myBitmap = QRCode.from("").withSize(400,400).bitmap();
             ImageView myImage = (ImageView) findViewById(R.id.imageView2);
             myImage.setImageBitmap(myBitmap);
         }
