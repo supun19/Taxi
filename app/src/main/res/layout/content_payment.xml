@@ -11,33 +11,35 @@
         android:text="hire destination"
         android:layout_marginTop="40dp"
         android:padding="5dp"
-        android:textSize="10dp"/>
+        android:textSize="15dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Borella Cemetery to Wijerama, Nugegoda"
         android:padding="5dp"
-        android:textSize="15dp"/>
+        android:textSize="15dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hire Distance"
         android:padding="5dp"
-        android:textSize="10dp"/>
+        android:textSize="15dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="10.4 km"
         android:padding="5dp"
-        android:textSize="15dp"/>
+        android:textSize="15dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hire Amount"
         android:padding="5dp"
-        android:textSize="10dp"/>
+        android:textSize="15dp"/>
 
     <TextView
         android:layout_width="match_parent"
